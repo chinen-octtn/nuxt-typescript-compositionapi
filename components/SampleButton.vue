@@ -1,5 +1,7 @@
 <template>
-  <button @click="countUp('カウント：')">count up : {{ counter }}</button>
+  <div class="sampleButton">
+    <button @click="countUp('カウント：')">count up : {{ counter }}</button>
+  </div>
 </template>
 
 <script lang="ts">
@@ -27,3 +29,20 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.sampleButton {
+  font-weight: bold;
+
+  button {
+    border: none;
+    padding: 1em;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px #fff inset, -1px -1px 3px #000 inset;
+
+    &:hover {
+      box-shadow: -1px -1px 3px #fff inset, 1px 1px 3px #000 inset;
+    }
+  }
+}
+</style>

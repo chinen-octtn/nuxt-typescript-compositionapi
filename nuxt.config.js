@@ -1,3 +1,6 @@
+import { Sass } from 'sass'
+import { Fiber } from 'fibers'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -22,6 +25,14 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    // https://go.nuxtjs.dev/axios
+    '@nuxtjs/axios',
+    // https://go.nuxtjs.dev/pwa
+    '@nuxtjs/pwa',
+  ],
+
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
@@ -31,13 +42,17 @@ export default {
     '@nuxtjs/composition-api',
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
-  ],
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {
+    loaders: {
+      scss: {
+        implementation: Sass,
+        sassOptions: {
+          fiber: Fiber,
+        },
+      },
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
@@ -53,7 +68,4 @@ export default {
     // choose to suit your project
     interval: 2000,
   },
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
 }
