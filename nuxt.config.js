@@ -28,6 +28,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/composition-api',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -46,6 +47,11 @@ export default {
     manifest: {
       lang: 'en',
     },
+  },
+
+  generate: {
+    // choose to suit your project
+    interval: 2000,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
