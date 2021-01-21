@@ -1,8 +1,12 @@
-# nuxt-typescript-compositionapi
+# Nuxt-TypeScript-CompositionAPI
+
+Nuxt.jsでTypeScriptとComposition APIを使える環境を用意します。
 
 ## Version
 Node v14.15.4
 npm 6.14.10
+
+MacOS Mojave 10.14.6で動作確認済
 
 ## create-nuxt-app
 * UI Framework: none
@@ -15,6 +19,16 @@ npm 6.14.10
 * Integration: none
 * Version control: none
 
+## Composition API
+package
+* [@nuxtjs/composition-api](https://composition-api.nuxtjs.org/)
+
+## Dart Sass
+package
+* sass
+* sass-loader
+* fibers
+
 ## Build Setup
 
 ```bash
@@ -24,15 +38,9 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
 # generate static project
 $ npm run generate
 
 # generate static project
 $ npm run test
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
