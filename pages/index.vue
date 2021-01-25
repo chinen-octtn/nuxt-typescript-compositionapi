@@ -12,11 +12,26 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import headTag from '~/assets/js/head'
 
-export default Vue.extend({})
+export default Vue.extend({
+  mixins: [headTag],
+  layout: 'default',
+
+  data() {
+    return {
+      meta: {
+        title: 'TOPページ',
+        description: 'TOPページの概要',
+        image: '/assets/img/ogp.png',
+        url: '/',
+      },
+    }
+  },
+})
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
   min-height: 100vh;
   display: flex;
