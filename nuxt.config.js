@@ -7,6 +7,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    htmlAttrs: {
+      lang: 'ja',
+    },
     title: 'nuxt-typescript-compositionapi',
     meta: [
       { charset: 'utf-8' },
@@ -66,6 +69,8 @@ export default {
       lang: 'en',
     },
   },
+
+  loading: false,
 
   generate: {
     // choose to suit your project
