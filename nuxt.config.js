@@ -67,6 +67,7 @@ export default {
   },
 
   loading: false,
+  loadingIndicator: false,
 
   generate: {
     // choose to suit your project
