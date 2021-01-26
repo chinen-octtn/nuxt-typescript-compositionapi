@@ -1,7 +1,9 @@
 # COMPONENTS
 
-**This directory is not required, you can delete it if you don't want to use it.**
+## element/
+パーツ単位でファイルを作成します。
+こちらのコンポーネントは、下記 `template/` 内でのみ使用します。
 
-The components directory contains your Vue.js Components.
-
-_Nuxt.js doesn't supercharge these components._
+## template/
+各ページごとにディレクトリを設け、section等の区切り単位でファイルを作成します。
+ `element/` のパーツを使って、デザインレイアウトを調整します。

@@ -1,11 +1,13 @@
 # STATIC
 
-**This directory is not required, you can delete it if you don't want to use it.**
+static配下のファイルはそのまま公開環境に配置されます。
+アイコンや画像はこのディレクトリで管理します。
 
-This directory contains your static files.
-Each file inside this directory is mapped to `/`.
-Thus you'd want to delete this README.md before deploying to production.
+## /static/assets/css
+コンパイル後のヘッダー・フッター用の共通CSSが出力されます。
+common.cssは直接編集は禁止です。
+編集する場合は、`assets/scss` を更新し、`npm run sass` でコンパイルします。
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#static).
+## /static/assets/img
+ディレクトリごとに画像を管理します。
+圧縮後の画像を格納するようにします。

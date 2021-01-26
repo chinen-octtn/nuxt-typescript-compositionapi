@@ -1,7 +1,11 @@
 # ASSETS
 
-**This directory is not required, you can delete it if you don't want to use it.**
+コンポーネントではない例外ファイルを管理します。
 
-This directory contains your un-compiled assets such as LESS, SASS, or JavaScript.
+## SCSS
+ヘッダー・フッター用のサイト全体の共通CSSをまとめています。
+コマンド `npm run sass` でコンパイル、監視します。※通常のコンポーネント開発とは別管理
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#webpacked).
+## JS
+コンポーネント内での共通処理をまとめています。
+* head内の処理

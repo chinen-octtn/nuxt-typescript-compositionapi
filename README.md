@@ -8,6 +8,22 @@ npm 6.14.10
 
 MacOS Mojave 10.14.6で動作確認済
 
+## Build Setup
+
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# generate static project
+$ npm run generate
+
+# generate static project
+$ npm run test
+```
+
 ## create-nuxt-app
 * UI Framework: none
 * Modules: Axios, PWA
@@ -28,19 +44,3 @@ package
 * sass
 * sass-loader
 * fibers
-
-## Build Setup
-
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# generate static project
-$ npm run generate
-
-# generate static project
-$ npm run test
-```
