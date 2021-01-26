@@ -1,5 +1,5 @@
 <template>
-  <div class="sampleButton">
+  <div class="Button">
     <button @click="countUp('カウント：')">count up : {{ counter }}</button>
   </div>
 </template>
@@ -8,7 +8,7 @@
 import { onMounted, ref } from '@nuxtjs/composition-api'
 
 export default {
-  name: 'Samplebutton',
+  name: 'Button',
 
   setup() {
     onMounted(() => {
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
-.sampleButton {
+.Button {
   font-weight: bold;
 
   button {

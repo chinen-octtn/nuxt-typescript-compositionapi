@@ -1,7 +1,9 @@
 <template>
   <div class="l-contentes">
     <Header />
-    <Nuxt />
+    <main class="l-main">
+      <Nuxt />
+    </main>
     <Footer />
   </div>
 </template>

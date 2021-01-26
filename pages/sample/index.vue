@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <h1 class="worksTitle">Works</h1>
+  <div class="sample">
+    <SampleBlock />
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.worksTitle {
-  font-size: 2rem;
+.sample {
+  //
 }
 </style>
