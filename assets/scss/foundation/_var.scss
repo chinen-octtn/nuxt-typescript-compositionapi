@@ -1,0 +1,68 @@
+@charset "UTF-8";
+//
+// color
+// --------------------------------------------------
+// ベースカラー
+$color-white: #fff;
+$color-black: #000;
+$color-primary: blue;
+$color-text: #333;
+
+// 背景色
+
+// border色
+
+// リンクカラー
+$color-link: $color-primary;
+
+//
+// font
+// --------------------------------------------------
+$regular: 400;
+$medium: 500;
+$semi: 600;
+$bold: 700;
+
+//
+// interaction
+// --------------------------------------------------
+$time: 0.3s;
+$easing: ease-in-out;
+
+//
+// breakpoint
+// --------------------------------------------------
+
+// width
+$full: 1200px;
+$pc: 1000px;
+$tablet: 768px;
+$sp: 768px;
+
+// e.g. breakpoint (sp/tablet/pc/full)
+// @include mq(sp){
+//   .className {
+//     property: value;
+//   }
+// }
+@mixin mq($point) {
+  @if $point == tablet {
+    @media print, screen and (min-width: $tablet) { @content ; }
+  }
+
+  @else if $point == pc {
+    @media print, screen and (min-width: $pc) { @content ; }
+  }
+
+  @else if $point == full {
+    @media print, screen and (min-width: $full) { @content ; }
+  }
+
+  @else if $point == sp {
+    @media print, screen and (max-width: $tablet - 1) { @content ; }
+  }
+
+  @else {
+    @media print, screen and (min-width: $point) { @content ; }
+  }
+}

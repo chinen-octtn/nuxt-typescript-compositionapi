@@ -29,6 +29,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/style-resources',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
@@ -43,6 +44,10 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/composition-api',
   ],
+
+  styleResources: {
+    scss: ['~/assets/scss/foundation/_var.scss'],
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
